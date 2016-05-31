@@ -1,0 +1,1 @@
+# amoad-cocos2dx-module

@@ -55,7 +55,6 @@
 		AC0A020C1D34C900008EDC6C /* InterstitialScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC0A02011D34C900008EDC6C /* InterstitialScene.cpp */; };
 		AC0A020D1D34C900008EDC6C /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC0A02031D34C900008EDC6C /* MainScene.cpp */; };
 		AC0A020E1D34C900008EDC6C /* NativeHtmlScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC0A02051D34C900008EDC6C /* NativeHtmlScene.cpp */; };
-		AC0A02311D34D641008EDC6C /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB07180E9839004C840B /* libcocos2d iOS.a */; };
 		AC0A02341D34D6DC008EDC6C /* AMoAdCocos2dxModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = AC0A02331D34D6DC008EDC6C /* AMoAdCocos2dxModule.mm */; };
 		AC0A02361D34D94C008EDC6C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0A02351D34D94C008EDC6C /* CoreMedia.framework */; };
 		AC0A02381D34DB78008EDC6C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0A02371D34DB78008EDC6C /* MediaPlayer.framework */; };
@@ -67,6 +66,10 @@
 		AC0A02501D35DB45008EDC6C /* amoad_panel_l.png in Resources */ = {isa = PBXBuildFile; fileRef = AC0A02411D35DB45008EDC6C /* amoad_panel_l.png */; };
 		AC0A02511D35DB45008EDC6C /* amoad_panel.png in Resources */ = {isa = PBXBuildFile; fileRef = AC0A02421D35DB45008EDC6C /* amoad_panel.png */; };
 		AC0A02521D35DB45008EDC6C /* libAMoAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0A024B1D35DB45008EDC6C /* libAMoAd.a */; };
+		AC0EFE0E1D363C8400C63748 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0EFE0D1D363C8400C63748 /* AdSupport.framework */; };
+		AC0EFE101D363C8D00C63748 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0EFE0F1D363C8D00C63748 /* ImageIO.framework */; };
+		AC0EFE121D363C9600C63748 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0EFE111D363C9600C63748 /* StoreKit.framework */; };
+		AC0EFE1A1D36497100C63748 /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0EFE191D36497100C63748 /* libcocos2d iOS.a */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -75,9 +78,6 @@
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
 		E9161A0F1C60B4F6000B8381 /* AMoAdNativeCocos2dxModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = E9161A0E1C60B4F6000B8381 /* AMoAdNativeCocos2dxModule.mm */; };
-		E9161A151C60B527000B8381 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9161A141C60B527000B8381 /* AdSupport.framework */; };
-		E9161A171C60B532000B8381 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9161A161C60B532000B8381 /* ImageIO.framework */; };
-		E9161A191C60B53C000B8381 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9161A181C60B53C000B8381 /* StoreKit.framework */; };
 		ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7B1B68A1F400C3958E /* libiconv.dylib */; };
 		ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7D1B68A1FA00C3958E /* libiconv.dylib */; };
 /* End PBXBuildFile section */
@@ -192,6 +192,10 @@
 		AC0A024A1D35DB45008EDC6C /* AMoAdWeb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMoAdWeb.h; path = AMoAdSdk/AMoAdWeb.h; sourceTree = SOURCE_ROOT; };
 		AC0A024B1D35DB45008EDC6C /* libAMoAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAMoAd.a; path = AMoAdSdk/libAMoAd.a; sourceTree = SOURCE_ROOT; };
 		AC0A02531D35E124008EDC6C /* AMoAdNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMoAdNative.h; path = AMoAdSdk/AMoAdNative.h; sourceTree = SOURCE_ROOT; };
+		AC0EFE0D1D363C8400C63748 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
+		AC0EFE0F1D363C8D00C63748 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		AC0EFE111D363C9600C63748 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		AC0EFE191D36497100C63748 /* libcocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d iOS.a"; path = "../../../../Library/Developer/Xcode/DerivedData/AMoAdCocos2dxModuleDemo-cjwthcudlgkzezdotmmzaewobelw/Build/Products/Debug-iphoneos/libcocos2d iOS.a"; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -213,14 +217,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC0A02521D35DB45008EDC6C /* libAMoAd.a in Frameworks */,
+				AC0EFE0E1D363C8400C63748 /* AdSupport.framework in Frameworks */,
+				AC0EFE101D363C8D00C63748 /* ImageIO.framework in Frameworks */,
+				AC0EFE121D363C9600C63748 /* StoreKit.framework in Frameworks */,
+				D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */,
+				AC0A02361D34D94C008EDC6C /* CoreMedia.framework in Frameworks */,
 				AC0A023A1D34DBFD008EDC6C /* GameController.framework in Frameworks */,
 				AC0A02381D34DB78008EDC6C /* MediaPlayer.framework in Frameworks */,
-				AC0A02361D34D94C008EDC6C /* CoreMedia.framework in Frameworks */,
-				AC0A02311D34D641008EDC6C /* libcocos2d iOS.a in Frameworks */,
-				E9161A191C60B53C000B8381 /* StoreKit.framework in Frameworks */,
-				E9161A171C60B532000B8381 /* ImageIO.framework in Frameworks */,
-				AC0A02521D35DB45008EDC6C /* libAMoAd.a in Frameworks */,
-				E9161A151C60B527000B8381 /* AdSupport.framework in Frameworks */,
+				AC0EFE1A1D36497100C63748 /* libcocos2d iOS.a in Frameworks */,
 				ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */,
 				52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */,
 				D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */,
@@ -231,7 +236,6 @@
 				BF1712471292920000B8313A /* libz.dylib in Frameworks */,
 				BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */,
 				D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */,
-				D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */,
 				D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +314,10 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AC0EFE191D36497100C63748 /* libcocos2d iOS.a */,
+				AC0EFE111D363C9600C63748 /* StoreKit.framework */,
+				AC0EFE0F1D363C8D00C63748 /* ImageIO.framework */,
+				AC0EFE0D1D363C8400C63748 /* AdSupport.framework */,
 				AC0A02391D34DBFD008EDC6C /* GameController.framework */,
 				AC0A02371D34DB78008EDC6C /* MediaPlayer.framework */,
 				AC0A02351D34D94C008EDC6C /* CoreMedia.framework */,

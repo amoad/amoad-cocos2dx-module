@@ -36,10 +36,6 @@ static AMoAdView *find_amoad_view(NSString *sid) {
 
 #pragma mark - Implements
 
-@interface AMoAdView(AMoAdCocos2dxModule)
-- (instancetype)initWithBannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode x:(CGFloat)x y:(CGFloat)y delegate:(id)delegate;
-@end
-
 void AMoAdCocos2dxModule::registerInlineAd(const char *cSid,
                                            AMoAdCocos2dxModule::AdSize adSize,
                                            AMoAdCocos2dxModule::HorizontalAlign hAlign,
@@ -50,14 +46,13 @@ void AMoAdCocos2dxModule::registerInlineAd(const char *cSid,
                                            int timeoutMillis/* = 30*1000*/)
 {
   NSString *sid = string_with_cstring(cSid);
-  AMoAdView *amoadView = [[AMoAdView alloc] initWithBannerSize:AMoAdBannerSize(adSize)
-                                                        hAlign:AMoAdHorizontalAlign(hAlign)
-                                                        vAlign:AMoAdVerticalAlign(vAlign)
-                                                    adjustMode:AMoAdAdjustMode(adjustMode)
-                                                             x:CGFloat(x)
-                                                             y:CGFloat(y)
-                                                      delegate:nil];
+
+  AMoAdView *amoadView = [[AMoAdView alloc] initWithFrame:CGRectMake((CGFloat)x, (CGFloat)y, 0.0, 0.0)];
   if (amoadView) {
+    amoadView.horizontalAlign = (AMoAdHorizontalAlign)hAlign;
+    amoadView.verticalAlign   = (AMoAdVerticalAlign)vAlign;
+    amoadView.adjustMode      = (AMoAdAdjustMode)adjustMode;
+
     UIViewController *viewController = get_view_controller();
     amoadView.networkTimeoutMillis = timeoutMillis;
     amoadView.hidden = YES;

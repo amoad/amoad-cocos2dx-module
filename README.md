@@ -2,7 +2,7 @@
 <img width="172" height="61" src="http://www.amoad.com/images/logo.png">
 </div>
 
-# AMoAd Cocos2d-x Module
+# AMoAd Cocos2d-x Module ver 4.7.4
 
 - [ZIPをダウンロード](https://github.com/amoad/amoad-cocos2dx-module/archive/master.zip)
 - [ドキュメント](https://github.com/amoad/amoad-cocos2dx-module/wiki)

@@ -4,7 +4,7 @@
 
 # AMoAd Cocos2d-x Module ver 4.7.4
 
-- [ZIPをダウンロード](https://github.com/amoad/amoad-cocos2dx-module/archive/master.zip)
+- [ZIPをダウンロード](https://github.com/amoad/amoad-cocos2dx-module/archive/v4.7.zip)
 - [ドキュメント](https://github.com/amoad/amoad-cocos2dx-module/wiki)
 
 ## Demo

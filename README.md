@@ -27,3 +27,8 @@
 
 Cocos2d-x 3.7 or later
 > デモアプリはCocos2dx3.10で動作確認ずみです。
+
+## その他
+- [AMoAd iOS SDK](https://github.com/amoad/amoad-ios-sdk)
+- [AMoAd Android SDK](https://github.com/amoad/amoad-android-sdk)
+- [AMoAd Unity Plugin](https://github.com/amoad/amoad-unity-plugin)

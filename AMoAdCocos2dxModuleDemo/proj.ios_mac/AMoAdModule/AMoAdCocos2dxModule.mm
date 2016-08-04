@@ -37,7 +37,6 @@ static AMoAdView *find_amoad_view(NSString *sid) {
 #pragma mark - Implements
 
 void AMoAdCocos2dxModule::registerInlineAd(const char *cSid,
-                                           AMoAdCocos2dxModule::AdSize adSize,
                                            AMoAdCocos2dxModule::HorizontalAlign hAlign,
                                            AMoAdCocos2dxModule::VerticalAlign vAlign,
                                            AMoAdCocos2dxModule::AdjustMode adjustMode,

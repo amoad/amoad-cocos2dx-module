@@ -32,3 +32,4 @@ Cocos2d-x 3.7 or later
 - [AMoAd iOS SDK](https://github.com/amoad/amoad-ios-sdk)
 - [AMoAd Android SDK](https://github.com/amoad/amoad-android-sdk)
 - [AMoAd Unity Plugin](https://github.com/amoad/amoad-unity-plugin)
+

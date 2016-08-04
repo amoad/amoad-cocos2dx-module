@@ -20,16 +20,7 @@ private:
   AMoAdCocos2dxModule();
 public:
   /// モジュールバージョン
-  static constexpr char const* VersionNo = "1.3.0";
-
-  /// 広告サイズ
-  enum struct AdSize : int {
-    B320x50 = 0,
-    B320x100 = 1,
-    R300x250 = 2,
-    B728x90 = 3,
-    R300x100 = 4,
-  };
+  static constexpr char const* VersionNo = "1.4.0";
 
   /// 水平方向の広告表示位置
   enum struct HorizontalAlign : int {
@@ -83,7 +74,6 @@ public:
 
   /// インライン広告を登録する
   /// @param sid 管理画面より取得したID
-  /// @param adSize 広告サイズ
   /// @param hAlign 水平方向の広告表示位置
   /// @param vAlign 垂直方向の広告表示位置
   /// @param adjustMode 広告サイズの調整
@@ -91,7 +81,6 @@ public:
   /// @param y y座標（vAlignがNoneのときのみ有効）
   /// @param timeoutMillis タイムアウト時間（ミリ秒）を設定する：デフォルトは30,000ミリ秒
   static void registerInlineAd(const char* sid,
-                               AMoAdCocos2dxModule::AdSize adSize,
                                AMoAdCocos2dxModule::HorizontalAlign hAlign,
                                AMoAdCocos2dxModule::VerticalAlign vAlign,
                                AMoAdCocos2dxModule::AdjustMode adjustMode,

@@ -15,10 +15,6 @@ private:
   /// インスタンスを生成する必要はありません
   AMoAdNativeCocos2dxModule();
 public:
-  /// モジュールバージョン
-  static constexpr char const* VersionNo = "1.0.2";
-
-
   /// 広告をロードする
   /// @param sid 管理画面から取得した64文字の英数字
   /// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます

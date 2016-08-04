@@ -9,14 +9,14 @@
 
 #define AMOAD_COCOS2DX_MODULE_CLASS_NAME "com/amoad/cocos2dx/AMoAdCocos2dxModule"
 
-void AMoAdCocos2dxModule::registerInlineAd(const char *cSid, AMoAdCocos2dxModule::AdSize adSize,
+void AMoAdCocos2dxModule::registerInlineAd(const char *cSid,
   AMoAdCocos2dxModule::HorizontalAlign hAlign, AMoAdCocos2dxModule::VerticalAlign vAlign,
   AMoAdCocos2dxModule::AdjustMode adjustMode, int x/* = 0*/, int y/* = 0*/, int timeoutMillis)
 {
   cocos2d::JniMethodInfo jniMethodInfo;
-  if (cocos2d::JniHelper::getStaticMethodInfo(jniMethodInfo, AMOAD_COCOS2DX_MODULE_CLASS_NAME, "registerInlineAd", "(Ljava/lang/String;IIIIIII)V")) {
+  if (cocos2d::JniHelper::getStaticMethodInfo(jniMethodInfo, AMOAD_COCOS2DX_MODULE_CLASS_NAME, "registerInlineAd", "(Ljava/lang/String;IIIIII)V")) {
     jstring sid = jniMethodInfo.env->NewStringUTF(cSid);
-    jniMethodInfo.env->CallStaticVoidMethod(jniMethodInfo.classID, jniMethodInfo.methodID, sid, int(adSize), int(hAlign), int(vAlign), int(adjustMode), x, y, timeoutMillis);
+    jniMethodInfo.env->CallStaticVoidMethod(jniMethodInfo.classID, jniMethodInfo.methodID, sid, int(hAlign), int(vAlign), int(adjustMode), x, y, timeoutMillis);
     jniMethodInfo.env->DeleteLocalRef(sid);
     jniMethodInfo.env->DeleteLocalRef(jniMethodInfo.classID);
   }

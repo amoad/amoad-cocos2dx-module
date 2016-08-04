@@ -67,7 +67,6 @@ bool DisplayScene::init()
     //ad
     auto sid = Bundle::getInstance()->sid.c_str();
     AMoAdCocos2dxModule::registerInlineAd(sid,
-                                          AMoAdCocos2dxModule::AdSize::B320x50,
                                           AMoAdCocos2dxModule::HorizontalAlign::Center,
                                           AMoAdCocos2dxModule::VerticalAlign::Bottom,
                                           AMoAdCocos2dxModule::AdjustMode::Responsive,

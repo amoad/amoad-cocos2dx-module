@@ -26,7 +26,7 @@
 ## 対応環境
 
 Cocos2d-x 3.7 or later
-> デモアプリはCocos2dx3.10で動作確認ずみです。
+> デモアプリはCocos2dx3.10 & Cocos2dx3.13.1 で動作確認ずみです。
 
 ## その他
 - [AMoAd iOS SDK](https://github.com/amoad/amoad-ios-sdk)

@@ -11,15 +11,15 @@ LOCAL_MODULE := cocos2dcpp_shared
 LOCAL_MODULE_FILENAME := libcocos2dcpp
 
 LOCAL_SRC_FILES := hellocpp/main.cpp \
-                   ../../Classes/AMoAdCocos2dxModule.cpp \
-                   ../../Classes/AMoAdNativeCocos2dxModule.cpp \
-                   ../../Classes/AppDelegate.cpp \
-                   ../../Classes/MainScene.cpp \
-                   ../../Classes/FormScene.cpp \
-                   ../../Classes/DisplayScene.cpp \
-                   ../../Classes/InterstitialScene.cpp \
-                   ../../Classes/NativeHtmlScene.cpp \
-                   ../../Classes/Bundle.cpp
+                   ../../../Classes/AMoAdCocos2dxModule.cpp \
+                   ../../../Classes/AMoAdNativeCocos2dxModule.cpp \
+                   ../../../Classes/AppDelegate.cpp \
+                   ../../../Classes/MainScene.cpp \
+                   ../../../Classes/FormScene.cpp \
+                   ../../../Classes/DisplayScene.cpp \
+                   ../../../Classes/InterstitialScene.cpp \
+                   ../../../Classes/NativeHtmlScene.cpp \
+                   ../../../Classes/Bundle.cpp
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../../Classes
 

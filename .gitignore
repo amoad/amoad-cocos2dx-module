@@ -30,7 +30,7 @@ ProjectSettings/
 
 #cocos2d-x
 #libs/
-armeabi/
+#armeabi/
 bin/
 obj/
 assets/
@@ -39,6 +39,8 @@ out/
 .classpath
 .project
 .cproject
+AMoAdCocos2dxModuleDemo/proj.android-studio/app/libs/armeabi/
+AMoAdCocos2dxModuleDemo/proj.android/libs/armeabi/
 
 #android-studio
 *.iml

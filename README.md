@@ -3,8 +3,7 @@
 </div>
 
 # AMoAd Cocos2d-x Module ver 5.2.2
-
-- [ZIPをダウンロード](https://github.com/amoad/amoad-cocos2dx-module/archive/master.zip)
+**このリポジトリは現在使われておりません**
 - [ドキュメント](https://github.com/amoad/amoad-cocos2dx-module/wiki)
 
 ## Demo
